@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock • Paper • Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bar">
+      <h1>Rock • Paper • Scissors</h1>
+    </header>
+
+    <!-- Nav -->
+    <nav>
+      <ul class="nav">
+        <li>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+            >Youtube</a
+          >
+        </li>
+        <li>
+          <a href="https://elms.umd.edu/" target="_blank" rel="noopener"
+            >ELMS</a
+          >
+        </li>
+        <li>
+          <a href="https://www.khanacademy.org" target="_blank" rel="noopener"
+            >Khan Academy</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Body -->
+    <div class="content">
+      <!-- Main Content -->
+      <section class="main">
+        <h2>Play Now</h2>
+
+        <form id="rps-form" action="#" method="get">
+          <div class="row">
+            <label for="name">Name:</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <label for="choice">Choose:</label>
+            <select id="choice" name="choice">
+              <option>Rock</option>
+              <option>Paper</option>
+              <option>Scissors</option>
+            </select>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>How to Play</h3>
+        <ol>
+          <li>Rock beats Scissors</li>
+          <li>Scissors beat Paper</li>
+          <li>Paper beats Rock</li>
+          <li>Same choice = tie</li>
+        </ol>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bar">
+      <p>footer</p>
+    </footer>
+  </body>
+</html>
