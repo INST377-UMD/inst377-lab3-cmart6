@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f5f7; /* page color */
+  color: #222;
+  text-align: center; /* center page text */
+}
+
+/* Header + Footer */
+.bar {
+  background: #1f6feb; /* different color */
+  color: white;
+  padding: 16px; /* padding */
+  margin: 12px; /* margin */
+  border-radius: 8px;
+}
+
+/* Nav */
+.nav {
+  list-style: none; /* no bullets */
+  padding: 0;
+  margin: 0 12px 12px;
+  display: flex; /* horizontal */
+  gap: 12px;
+  justify-content: center;
+}
+.nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.15s, background 0.15s;
+}
+.nav a:hover {
+  /* hover state */
+  background: #e8f0ff;
+  transform: translateY(-1px);
+}
+
+/* Body layout: main + sidebar */
+.content {
+  display: flex; /* one line */
+  gap: 12px;
+  margin: 0 12px 12px;
+}
+.main {
+  width: 70%;
+  background: white;
+  padding: 16px;
+  margin: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.sidebar {
+  width: 30%; /* percentage width */
+  background: #fff8e7;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.sidebar:hover {
+  /* hover change bg color */
+  background: #ffeabf;
+}
+
+/* Form basics */
+.row {
+  margin: 10px 0; /* margin */
+}
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 8px;
+}
+input[type="text"] {
+  width: 180px; /* base width */
+  padding: 6px;
+  transition: width 0.2s;
+}
+input[type="text"]:focus {
+  /* grow on focus */
+  width: 260px;
+}
+select {
+  padding: 6px;
+}
+button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #1f6feb;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+/* Small screens: still simple */
+@media (max-width: 700px) {
+  .content {
+    flex-wrap: wrap;
+  } /* (optional) stack on small */
+  .main,
+  .sidebar {
+    width: 100%;
+  }
+}
